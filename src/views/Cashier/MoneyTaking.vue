@@ -13,7 +13,6 @@
       <el-table-column prop="date" label="账户变动时间" :formatter="formatter" />
       <el-table-column prop="beginningBalance" label="月初金额" width="150" />
       <el-table-column prop="endingBalance" label="月末金额" width="150" />
-
       <el-table-column prop="totalPrice" label="盘点数量" sortable width="150">
         <template #default="scope">
           <el-input v-model.number="scope.row.totalPrice" size="small"></el-input>

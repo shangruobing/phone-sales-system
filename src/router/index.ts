@@ -27,11 +27,6 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('../views/Content/Welcome.vue')
       },
       {
-        path: 'stock',
-        meta: { subMenu: '库存管理', menuItem: '查看库存' },
-        component: () => import('../views/Stock/StockList.vue')
-      },
-      {
         path: 'outbound',
         meta: { subMenu: '库存管理', menuItem: '货物出库' },
         component: () => import('../views/Stock/OutBound.vue')
@@ -40,6 +35,11 @@ const routes: Array<RouteRecordRaw> = [
         path: 'stock-taking',
         meta: { subMenu: '库存管理', menuItem: '库存盘点' },
         component: () => import('../views/Stock/StockTaking.vue')
+      },
+      {
+        path: 'enterbound',
+        meta: { subMenu: '库存管理', menuItem: '货物入库' },
+        component: () => import('../views/Stock/EnterBound.vue')
       },
       {
         path: 'cashier',
@@ -55,6 +55,11 @@ const routes: Array<RouteRecordRaw> = [
         path: 'money-taking',
         meta: { subMenu: '出纳管理', menuItem: '现金盘点' },
         component: () => import('../views/Cashier/MoneyTaking.vue')
+      },
+      {
+        path: 'stock',
+        meta: { subMenu: '销售管理', menuItem: '查看库存' },
+        component: () => import('../views/Sales/StockList.vue')
       },
       {
         path: 'sales',

@@ -61,7 +61,8 @@ import {
   Handbag,
   ShoppingCart,
   Box,
-  Wallet
+  Wallet,
+  Suitcase
 } from '@element-plus/icons-vue'
 
 import { useMainStore } from '@/stores/index'
@@ -82,7 +83,7 @@ const menu: Array<Menu> = [
     item: '库存管理',
     icon: MenuIcon,
     subMenu: [
-      { index: 'stock', item: '查看库存', icon: Reading },
+      { index: 'enterbound', item: '货物入库', icon: Suitcase },
       { index: 'outbound', item: '货物出库', icon: Handbag },
       { index: 'stock-taking', item: '库存盘点', icon: Box }
     ]
@@ -102,6 +103,7 @@ const menu: Array<Menu> = [
     item: '销售管理',
     icon: Setting,
     subMenu: [
+      { index: 'stock', item: '查看库存', icon: Reading },
       { index: 'sales', item: '销售状况', icon: Goods },
       { index: 'receipt', item: '开具小票', icon: ShoppingCart }
     ]
