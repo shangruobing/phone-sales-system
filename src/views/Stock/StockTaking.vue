@@ -12,13 +12,13 @@
     >
       <el-table-column prop="product.id" label="序列号" />
       <el-table-column prop="product.name" label="名称" />
-      <el-table-column prop="quantity" label="库存数量" sortable width="150" />
-      <el-table-column prop="kept" label="盘点数量" sortable width="150">
+      <el-table-column prop="quantity" label="库存数量" sortable width="100" />
+      <el-table-column prop="kept" label="盘点数量" sortable width="100">
         <template #default="scope">
           <el-input v-model.number="scope.row.kept" size="small"></el-input>
         </template>
       </el-table-column>
-      <el-table-column prop="balance" label="差额" sortable width="150">
+      <el-table-column prop="balance" label="差额" sortable width="100">
         <template #default="scope">
           {{ scope.row.kept - scope.row.quantity }}
         </template>

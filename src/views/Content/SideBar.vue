@@ -62,7 +62,8 @@ import {
   ShoppingCart,
   Box,
   Wallet,
-  Suitcase
+  Suitcase,
+  List
 } from '@element-plus/icons-vue'
 
 import { useMainStore } from '@/stores/index'
@@ -84,6 +85,7 @@ const menu: Array<Menu> = [
     icon: MenuIcon,
     subMenu: [
       { index: 'enterbound', item: '货物入库', icon: Suitcase },
+      { index: 'importbound', item: '批量入库', icon: List },
       { index: 'outbound', item: '货物出库', icon: Handbag },
       { index: 'stock-taking', item: '库存盘点', icon: Box }
     ]

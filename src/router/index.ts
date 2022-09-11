@@ -42,6 +42,11 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('../views/Stock/EnterBound.vue')
       },
       {
+        path: 'importbound',
+        meta: { subMenu: '库存管理', menuItem: '批量入库' },
+        component: () => import('../views/Stock/ImportStock.vue')
+      },
+      {
         path: 'cashier',
         meta: { subMenu: '出纳管理', menuItem: '查看账单' },
         component: () => import('../views/Cashier/CashierList.vue')
